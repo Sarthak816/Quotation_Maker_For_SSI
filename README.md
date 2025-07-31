@@ -1,7 +1,6 @@
 # Quotation Maker – Flask Web App
 
 [![Python Version](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/) 
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
 [![Repo Size](https://img.shields.io/github/repo-size/yourusername/quotation-maker)]() 
 [![Last Commit](https://img.shields.io/github/last-commit/yourusername/quotation-maker)]()
 
