@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotation Dashboard - Rathi Sons Alglaze Pvt. Ltd.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/lux/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .btn-sm {
+            font-size: 0.8rem;
+        }
+        .logo {
+            max-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>Quotation Dashboard</h3>
+            <a href="/" class="btn btn-primary">Create New Quotation</a>
+        </div>
+
+        {% if quotations %}
+        <table class="table table-bordered table-hover table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>File Name</th>
+                    <th>Created On</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for file in quotations %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ file }}</td>
+                    <td>{{ file[ file.find('_')+1:file.rfind('.') ] | replace('_', ' ') }}</td>
+                    <td>
+                        <a href="{{ url_for('static', filename='../quotations/' ~ file) }}" class="btn btn-success btn-sm" target="_blank">View</a>
+                        <a href="{{ url_for('static', filename='../quotations/' ~ file) }}" class="btn btn-info btn-sm" download>Download</a>
+                        <a href="{{ url_for('delete_file', filename=file) }}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure to delete this quotation?');">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <div class="alert alert-info">No quotations available yet.</div>
+        {% endif %}
+    </div>
+</body>
+</html>
