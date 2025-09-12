@@ -1,7 +1,7 @@
 # Quotation Maker – Flask Web App
 
 [![Python Version](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/) 
-[![Repo Size](https://img.shields.io/github/repo-size/yourusername/quotation-maker)]() 
+[![Repo Size](https://github.com/Sarthak816/Quotation_app)]() 
 [![Last Commit](https://img.shields.io/github/last-commit/yourusername/quotation-maker)]()
 
 A **professional-grade Quotation Maker** web application built with **Python (Flask)** for **Rathi Sons Alglaze Pvt. Ltd.**  
