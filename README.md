@@ -2,10 +2,11 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/) 
 ![Repo Size](https://img.shields.io/github/repo-size/Sarthak816/Quotation_app)
-[![Last Commit](https://img.shields.io/github/last-commit/yourusername/quotation-maker)]()
+![Last Commit](https://img.shields.io/github/last-commit/Sarthak816/Quotation_app)
 
-A **professional-grade Quotation Maker** web application built with **Python (Flask)** for **Rathi Sons Alglaze Pvt. Ltd.**  
-Generate clean, printable PDF quotations with full item breakdown and branding.
+
+A **professional-grade Quotation Maker** web application built with **Python (Flask)** for **Pal Alluminium and Fabrication**  
+Generate clean, printable PDF quotations for products with full item breakdown and branding.
 
 ---
 
